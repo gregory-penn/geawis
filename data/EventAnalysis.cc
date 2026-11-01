@@ -106,10 +106,10 @@ void EventAnalysis::processEvent(Event& event, UltraFastSim &ufs) {
       else if (particle.GetPdgCode() == 22) {
 	puppi.pid = l1ct::ParticleID::PID::PHOTON;
       }
-      else if (particle.GetPdgCode() == 221 | particle.GetPdgCode() == 321 | particle.GetPdgCode() == 2212) {
+      else if (particle.GetPdgCode() == 211 | particle.GetPdgCode() == 321 | particle.GetPdgCode() == 2212) {
 	puppi.pid = l1ct::ParticleID::PID::HADPLUS;
       }
-      else if (particle.GetPdgCode() == -221 | particle.GetPdgCode() == -321 | particle.GetPdgCode() == -2212) {
+      else if (particle.GetPdgCode() == -211 | particle.GetPdgCode() == -321 | particle.GetPdgCode() == -2212) {
 	puppi.pid = l1ct::ParticleID::PID::HADMINUS;
       }
       else {
